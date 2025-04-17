@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --card-background: #333333;
+  --card-chip: #ddcd78;
+  --color-white: #ffffff;
+  --color-description: #8b95a1;
+  --color-input: #acacac;
+  --color-error: #ff3d3d;
+  --color-black: #000000;
+}
+
+html body {
+  min-width: 300px;
+}
+
+body {
+  padding: 20px;
+}
+
+.App {
+  max-width: 300px;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.card-input {
+  width: 100%;
+  justify-self: center;
+}
+._input-number_11aiz_1 {
+  width: 100%;
+  border: var(--color-input) 1px solid;
+  border-radius: 4px;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+._input-number_11aiz_1::placeholder {
+  color: var(--color-input);
+}
+
+._input-number_11aiz_1:focus {
+  outline-color: var(--color-black) 1px solid;
+}
+
+._input-number_11aiz_1._error_11aiz_17 {
+  outline: 1px solid var(--color-error);
+}
+._input-description_zkncj_1 {
+  font-size: 9.5px;
+  font-weight: 500;
+  color: var(--color-description);
+}
+._input-subtitle_1oe5e_1 {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 18px 0 8px 0;
+}
+.input-title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 38px 0 5px 0;
+}
+._card-number_jpg1c_1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+._card-number__input_jpg1c_7 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+._input-error-message_1wl8m_1 {
+  color: var(--color-error);
+  height: 14px;
+  display: block;
+  font-size: 9.5px;
+  margin: 4px 0 0 0;
+}
+._card-number__input_11c6t_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+._card-cvc_1suf8_1 {
+  width: 100%;
+}
+._card-layout_bg4wo_1 {
+  width: 212px;
+  height: 132px;
+  background-color: var(--card-background);
+  border-radius: 4px;
+  position: relative;
+  align-self: center;
+}
+
+._card-chip_bg4wo_10 {
+  width: 36px;
+  height: 22px;
+  background-color: var(--card-chip);
+  border-radius: 4px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+._card-logo_z50o2_1 {
+  width: 36px;
+  border: 0px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+._card-layout-number-container_m0ch8_1 {
+  font-size: 14px;
+  color: var(--color-white);
+  position: absolute;
+  top: 44px;
+  left: 17px;
+}
+
+._card-layout-number-wrapper_m0ch8_9 {
+  display: flex;
+  justify-content: center;
+}
+
+._card-layout-number_m0ch8_1 {
+  width: 40px;
+  height: 25px;
+  padding: 10px 0 0 0;
+}
